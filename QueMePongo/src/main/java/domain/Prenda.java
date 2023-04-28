@@ -17,4 +17,8 @@ public class Prenda {
         this.colorPrimario = Objects.requireNonNull(colorPrimario,"La prenda debe tener un tipo");
         this.colorSecundario=colorSecundario;
     }
+
+    public Categoria categoria(){
+        return tipoDePrenda.getCategoria();
+    }
 }
